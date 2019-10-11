@@ -10,6 +10,7 @@ pipeline {
       }
       steps {
         sh '''whoami
+apk add gcc
 ./configure
 '''
       }
