@@ -9,9 +9,9 @@ pipeline {
 
       }
       steps {
-        sh '''whoami
-apk add gcc
-./configure
+        sh '''
+sudo apt install gcc
+
 '''
         sh 'sudo apk add sudo'
       }
