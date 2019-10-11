@@ -9,7 +9,7 @@ pipeline {
 
       }
       steps {
-        sh '''
+        sh '''apt update
 apt install gcc
 
 '''
