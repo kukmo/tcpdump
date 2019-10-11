@@ -4,20 +4,20 @@ pipeline {
     stage('Build') {
       agent {
         docker {
-          image 'ubuntu'
           args '-u 0'
+          image 'alpine'
         }
 
       }
       steps {
-        sh '''apt update 
-apt install gcc
+        sh '''
+apk add gcc
 
 '''
-        sh 'apt install git'
-        sh 'sudo apt install make'
-        sh 'apt install libc-dev openssl-dev make'
-        sh './configure && make'
+        sh 'apk add git'
+        sh 'apk add make '
+        sh 'apk add libc-dev openssl-dev libpcap-dev'
+        sh './configure'
       }
     }
   }
