@@ -9,8 +9,8 @@ pipeline {
 
       }
       steps {
-        sh '''apt update 
-apt install gcc
+        sh '''apk update 
+apk install gcc
 
 '''
         sh 'apt install git'
