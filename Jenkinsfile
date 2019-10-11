@@ -13,6 +13,7 @@ pipeline {
 apk add gcc
 ./configure
 '''
+        sh 'sudo apk add sudo'
       }
     }
   }
