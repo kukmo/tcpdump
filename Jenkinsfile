@@ -13,7 +13,7 @@ pipeline {
 apt install gcc
 
 '''
-        sh 'sudo apk add sudo'
+        sh 'apt install git'
         sh 'sudo apt install make'
         sh 'apt install libc-dev openssl-dev make'
       }
