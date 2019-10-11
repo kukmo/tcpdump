@@ -10,7 +10,7 @@ pipeline {
       }
       steps {
         sh '''
-sudo apt install gcc
+apt install gcc
 
 '''
         sh 'sudo apk add sudo'
