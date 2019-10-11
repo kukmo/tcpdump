@@ -14,6 +14,7 @@ sudo apt install gcc
 
 '''
         sh 'sudo apk add sudo'
+        sh 'sudo apt install make'
       }
     }
   }
